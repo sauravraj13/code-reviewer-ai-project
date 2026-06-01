@@ -1,6 +1,9 @@
 const express = require('express');
 const aiRoutes = require('./routes/ai.routes')
 const cors = require('cors')
+app.use(cors({
+  origin: "https://code-reviewer-ai-project.vercel.app"
+}));
 
 const app = express()
 
